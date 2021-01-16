@@ -69,4 +69,25 @@ class getData{
             }
         }
     }
+
+    function insertUserJson(){
+        $this->dbReference = new DataConfig();
+        $this->dbConnect = $this->dbReference->connectDB();
+
+        $json  = file_get_contents('php://input', true);
+        $data = json_decode($json);
+        if($json != null && $data->UserName != ""){
+            $sql = "insert into infdata (UserName, FullName, Password, Email, PhoneNum) 
+                        values ('$data->UserName', '$data->FullName', '$data->Password', '$data->Email', '$data->PhoneNum')";
+            if($this->dbConnect->query($sql) === true){
+                $this->dbReference->sendResponse(201, '{"error_message":'.$this->dbReference->getStatusCodeMeeage(201).'}');
+            }
+            else{
+                $this->dbReference->sendResponse(400, '{"error_message":'.$this->dbReference->getStatusCodeMeeage(400).'}');
+            }
+        }
+        else{
+            $this->dbReference->sendResponse(400, '{"error_message":'.$this->dbReference->getStatusCodeMeeage(400).'}');
+        }
+    }
 }
