@@ -1,4 +1,5 @@
 <?php
+$url = 'http://localhost:63342/TechLife/';
 require 'admin/tesst/DAO.php';
 $DAO = new DAO();
 ?>
@@ -37,7 +38,7 @@ $DAO = new DAO();
     <meta property="og:title" content="Trang Chinh">
     <meta property="og:type" content="website">
     <meta name="theme-color" content="#478ac9">
-    <link rel="canonical" href="index.html">
+    <link rel="canonical" href="Recycle/index.html">
     <meta property="og:url" content="index.html">
 </head>
 <body class="u-body"><header class="u-clearfix u-header u-header" id="sec-d346"><div class="u-social-icons u-spacing-10 u-social-icons-1">
@@ -65,9 +66,9 @@ $DAO = new DAO();
             </a>
         </div>
         <div class="u-custom-menu u-nav-container">
-            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-black u-text-hover-palette-2-base" href="Trang-chính.html" style="padding: 10px 18px;">Trang Chinh</a>
+            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-black u-text-hover-palette-2-base" href="Trang-Chinh.php" style="padding: 10px 18px;">Trang Chinh</a>
                 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-black u-text-hover-palette-2-base" href="Trang-giỏ-hàng.html" style="padding: 10px 18px;">Giỏ hàng</a>
-                </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-black u-text-hover-palette-2-base" style="padding: 10px 18px;">Hỏi đáp</a>
+                </li><li class="u-nav-item"><a class="u-button-style u-nav-link" style="padding: 10px 18px;" href="admin/tesst/ThemSanPham.php">Admin</a>
                 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-black u-text-hover-palette-2-base" style="padding: 10px 18px;">Hỗ trợ</a>
                 </li></ul>
         </div>
@@ -75,9 +76,9 @@ $DAO = new DAO();
             <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
                 <div class="u-sidenav-overflow">
                     <div class="u-menu-close"></div>
-                    <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Trang-chính.html" style="padding: 10px 18px;">Trang Chinh</a>
+                    <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Trang-Chinh.php" style="padding: 10px 18px;">Trang Chinh</a>
                         </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Trang-giỏ-hàng.html" style="padding: 10px 18px;">Giỏ hàng</a>
-                        </li><li class="u-nav-item"><a class="u-button-style u-nav-link" style="padding: 10px 18px;">Hỏi đáp</a>
+                        </li><li class="u-nav-item"><a class="u-button-style u-nav-link" style="padding: 10px 18px;" href="admin/tesst/ThemSanPham.php">Admin</a>
                         </li><li class="u-nav-item"><a class="u-button-style u-nav-link" style="padding: 10px 18px;">Hỗ trợ</a>
                         </li></ul>
                 </div>
@@ -133,7 +134,7 @@ $DAO = new DAO();
 <section class="u-clearfix u-section-3" id="sec-d1bc">
     <div class="u-clearfix u-sheet u-sheet-1">
         <h4 class="u-align-left u-text u-text-1">Top Laptop</h4>
-        <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" href="Tat-Ca-San-Pham.html" data-page-id="874704595">Xem tất cả</a>
+        <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" href="Tat-Ca-San-Pham.php" data-page-id="874704595">Xem tất cả</a>
         <div class="u-expanded-width u-list u-repeater u-list-1">
             <div class="u-container-style u-list-item u-repeater-item">
                 <?php
@@ -146,7 +147,7 @@ $DAO = new DAO();
                     <div class="u-border-1 u-border-grey-dark-1 u-expanded-width u-line u-line-horizontal u-line-1"></div>
                     <h4 class="u-text" style="color: indianred">';echo $list->Laptop_Money,'</h4>
                     <p class="u-text u-text-2">';echo $list->Laptop_Name,'</p>
-                    <a href="Trang-Thong-Tin-Chi-Tiet.html" data-page-id="72415684" class="u-border-1 u-border-black u-border-hover-palette-2-base u-btn u-btn-rectangle u-button-style u-none u-text-body-color u-text-hover-palette-2-base u-btn-2">Xem thêm</a>
+                    <a href="';echo $url."Trang-Thong-Tin-Chi-Tiet.php?Id=";echo $list->Laptop_Id,'" data-page-id="72415684" class="u-border-1 u-border-black u-border-hover-palette-2-base u-btn u-btn-rectangle u-button-style u-none u-text-body-color u-text-hover-palette-2-base u-btn-2">Xem thêm</a>
                 </div>';
                     if (++$i == 3) break;
                 }

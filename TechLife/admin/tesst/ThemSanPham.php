@@ -1,3 +1,6 @@
+<?php
+require 'DAO.php';
+?>
 <!DOCTYPE html>
 <html style="font-size: 16px;">
 <head>
@@ -57,9 +60,9 @@
             </a>
         </div>
         <div class="u-custom-menu u-nav-container">
-            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-black u-text-hover-palette-2-base" href="Trang-chính.html" style="padding: 10px 18px;">Trang Chinh</a>
+            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-black u-text-hover-palette-2-base" href="../../index.php" style="padding: 10px 18px;">Trang Chinh</a>
                 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-black u-text-hover-palette-2-base" href="Gio-Hang.html" style="padding: 10px 18px;">Giỏ hàng</a>
-                </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-black u-text-hover-palette-2-base" style="padding: 10px 18px;">Hỏi đáp</a>
+                </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-black u-text-hover-palette-2-base" style="padding: 10px 18px;">Admin</a>
                 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-black u-text-hover-palette-2-base" style="padding: 10px 18px;">Hỗ trợ</a>
                 </li></ul>
         </div>
@@ -67,7 +70,7 @@
             <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
                 <div class="u-sidenav-overflow">
                     <div class="u-menu-close"></div>
-                    <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Trang-chính.html" style="padding: 10px 18px;">Trang Chinh</a>
+                    <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="../../Trang-Chinh.php" style="padding: 10px 18px;">Trang Chinh</a>
                         </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Gio-Hang.html" style="padding: 10px 18px;">Giỏ hàng</a>
                         </li><li class="u-nav-item"><a class="u-button-style u-nav-link" style="padding: 10px 18px;">Hỏi đáp</a>
                         </li><li class="u-nav-item"><a class="u-button-style u-nav-link" style="padding: 10px 18px;">Hỗ trợ</a>
@@ -78,7 +81,7 @@
         </div>
     </nav><h4 class="u-align-left u-custom-font u-text u-text-1">TechL​​​ife<br>
     </h4><h4 class="u-align-left u-text u-text-2">- Công nghệ và cuộc sống -</h4><p class="u-align-left u-text u-text-palette-1-base u-text-3">
-        <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" href="XacThucAdmin.html" data-page-id="46074301">Thêm​ sản phẩm</a>
+        <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" href="#" data-page-id="46074301">Nothing here</a>
     </p><div class="u-align-left u-border-1 u-border-grey-15 u-expanded-width u-line u-line-horizontal u-line-1"></div><nav class="u-menu u-menu-dropdown u-offcanvas u-menu-2">
         <div class="menu-collapse">
             <a class="u-button-style u-nav-link" href="#">
@@ -117,7 +120,11 @@
     </nav></header>
 <section class="u-align-center u-clearfix u-section-1" id="sec-ef8a">
     <div class="u-clearfix u-sheet u-sheet-1">
-        <h2 class="u-text u-text-default u-text-1">Cấu hình chi tiết</h2>
+        <h2 class="u-text u-text-default u-text-1">Thêm Laptop mới</h2>
+        <?php
+        if (isset($_SESSION['warning'])){
+            echo '<span style="color: indianred">';echo $_SESSION['warning'];'</span>';
+        } ?>
         <img src="images/3dbb1d826abb1d1fa3f76f2457a922bd4479ab3b69098ecca01390e36bf5a1a17cd9e295e12865fd8ff02e20d892e985ea0eec3dcda96ebde9f524_1280.png" alt="" class="u-image u-image-default u-preserve-proportions u-image-1" data-image-width="1280" data-image-height="1280">
         <div class="u-form u-form-1">
             <form method="POST" action="DAO.php"  style="padding: 15px;"  name="form">

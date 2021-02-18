@@ -16,7 +16,7 @@ class getData{
 
 
 
-    //get User
+    //get all
     function getAllItems(){
         $this->dbReference = new DataConfig();
         $this->dbConnect = $this->dbReference->connectDB();
@@ -37,6 +37,33 @@ class getData{
                 $this->dbReference->sendResponse(200, $resultSet);
             }else{
                 $this->dbReference->sendResponse(204, '{"items":null}');
+            }
+        }
+    }
+
+    //get detail product
+    function getDetail(){
+        $this->dbReference = new DataConfig();
+        $this->dbConnect = $this->dbReference->connectDB();
+        if ($this->dbConnect == null){
+            $this->dbReference->sendResponse(503, $this->dbReference->getStatusCodeMeeage(503));
+        }
+        else{
+            if (isset($_GET['Id'])){
+                $sql = "select * from product_detail where Laptop_Id =".$_GET['Id'];
+                $this->result = $this->dbConnect->query($sql);
+                if ($this->result->num_rows > 0) {
+                    $resultSet = array();
+                    while ($row = $this->result->fetch_assoc()) {
+                        $resultSet[] = $row;
+                    }
+                    $this->dbReference->sendResponse(200, $resultSet);
+                }else{
+                    $this->dbReference->sendResponse(204, '{"items":null}');
+                }
+            }
+            else{
+                $this->dbReference->sendResponse(404, 'not found value');
             }
         }
     }
