@@ -2,28 +2,22 @@
 require 'admin/tesst/DAO.php';
 $DAO = new DAO();
 ?>
-
 <!DOCTYPE html>
 <html style="font-size: 16px;">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Shop TaeiTaei">
+    <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="page_type" content="np-template-header-footer-from-plugin">
-    <title>Trang Chinh</title>
+    <title>Tat Ca San Pham</title>
     <link rel="stylesheet" href="nicepage.css" media="screen">
-    <link rel="stylesheet" href="Trang-Chinh.css" media="screen">
+    <link rel="stylesheet" href="Tat-Ca-San-Pham.css" media="screen">
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
     <meta name="generator" content="Nicepage 3.3.3, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
     <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aclonica:400">
-
-
-
-
-
 
 
 
@@ -34,7 +28,7 @@ $DAO = new DAO();
             "url": "index.html",
             "sameAs": []
         }</script>
-    <meta property="og:title" content="Trang Chinh">
+    <meta property="og:title" content="Tat Ca San Pham">
     <meta property="og:type" content="website">
     <meta name="theme-color" content="#478ac9">
     <link rel="canonical" href="index.html">
@@ -95,13 +89,13 @@ $DAO = new DAO();
             </a>
         </div>
         <div class="u-custom-menu u-nav-container">
-            <ul class="u-nav u-unstyled u-nav-3"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" style="padding: 10px 32px;">Laptop</a>
-                </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" style="padding: 10px 32px;">Màn hình</a>
-                </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" style="padding: 10px 32px;">Bàn phím</a>
-                </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" style="padding: 10px 32px;">Chuột - Lót chuột</a>
-                </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" style="padding: 10px 32px;">Tai nghe gaming</a>
-                </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" style="padding: 10px 32px;">Ghế gaming</a>
-                </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" style="padding: 10px 32px;">Console</a>
+            <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-4"><li class="u-nav-item"><a class="u-button-style u-nav-link" style="padding: 10px 42px;">Laptop</a>
+                </li><li class="u-nav-item"><a class="u-button-style u-nav-link" style="padding: 10px 42px;">Màn hình</a>
+                </li><li class="u-nav-item"><a class="u-button-style u-nav-link" style="padding: 10px 42px;">Bàn phím</a>
+                </li><li class="u-nav-item"><a class="u-button-style u-nav-link" style="padding: 10px 42px;">Chuột - Lót chuột</a>
+                </li><li class="u-nav-item"><a class="u-button-style u-nav-link" style="padding: 10px 42px;">Tai nghe gaming</a>
+                </li><li class="u-nav-item"><a class="u-button-style u-nav-link" style="padding: 10px 42px;">Ghế gaming</a>
+                </li><li class="u-nav-item"><a class="u-button-style u-nav-link" style="padding: 10px 42px;">Console</a>
                 </li></ul>
         </div>
         <div class="u-custom-menu u-nav-container-collapse">
@@ -121,31 +115,21 @@ $DAO = new DAO();
             <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
         </div>
     </nav></header>
-<section class="u-align-left-xs u-clearfix u-section-1" id="sec-47aa">
-    <div class="u-clearfix u-sheet u-sheet-1">
-        <div class="u-expand-resize u-expanded-width u-video u-video-contain u-video-1">
-            <div style="position: absolute;" class="embed-responsive">
-                <iframe style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;" class="embed-responsive-item" src="https://www.youtube.com/embed/Cs3DBRXuvDs?playlist=Cs3DBRXuvDs&amp;loop=1&amp;mute=1&amp;showinfo=0&amp;controls=1&amp;start=0&amp;autoplay=1" frameborder="0" allowfullscreen=""></iframe>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="u-clearfix u-section-3" id="sec-d1bc">
-    <div class="u-clearfix u-sheet u-sheet-1">
-        <h4 class="u-align-left u-text u-text-1">Top Laptop</h4>
-        <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" href="Tat-Ca-San-Pham.html" data-page-id="874704595">Xem tất cả</a>
+<section class="u-clearfix u-section-1" id="sec-4c9e">
+    <div class="u-clearfix u-sheet u-valign-middle-xs u-sheet-1">
+        <h4 class="u-align-left u-text u-text-1">Laptop đề xuất</h4>
         <div class="u-expanded-width u-list u-repeater u-list-1">
             <div class="u-container-style u-list-item u-repeater-item">
                 <?php
                 $DAO->getProductRecommendations();
                 $i = 0;
-                foreach ($_SESSION['listRecommendation'] -> message as $list){
+                foreach ($_SESSION['listRecommendation'] -> message as $listRecommendations){
                     echo'
                 <div class="u-container-layout u-similar-container u-valign-top u-container-layout-1">
-                    <img alt="" class="u-image u-image-default u-image-1" data-image-width="1500" data-image-height="1108" src="images/';echo $list->Laptop_Picture,'">
+                    <img alt="" class="u-image u-image-default u-image-1" data-image-width="1500" data-image-height="1108" src="images/';echo $listRecommendations->Laptop_Picture,'">
                     <div class="u-border-1 u-border-grey-dark-1 u-expanded-width u-line u-line-horizontal u-line-1"></div>
-                    <h4 class="u-text" style="color: indianred">';echo $list->Laptop_Money,'</h4>
-                    <p class="u-text u-text-2">';echo $list->Laptop_Name,'</p>
+                    <h4 class="u-text" style="color: indianred">';echo $listRecommendations->Laptop_Money,'</h4>
+                    <p class="u-text u-text-2">';echo $listRecommendations->Laptop_Name,'</p>
                     <a href="Trang-Thong-Tin-Chi-Tiet.html" data-page-id="72415684" class="u-border-1 u-border-black u-border-hover-palette-2-base u-btn u-btn-rectangle u-button-style u-none u-text-body-color u-text-hover-palette-2-base u-btn-2">Xem thêm</a>
                 </div>';
                     if (++$i == 3) break;
@@ -153,91 +137,37 @@ $DAO = new DAO();
                 ?>
             </div>
         </div>
+        <h4 class="u-align-left u-text u-text-5">Tất cả sản phẩm</h4>
     </div>
 </section>
-<section class="u-clearfix u-section-3" id="sec-d1bc">
+<section class="u-clearfix u-white u-section-2" id="sec-2f50">
     <div class="u-clearfix u-sheet u-sheet-1">
-        <h4 class="u-align-left u-text u-text-1">Top màn hình</h4>
-        <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" href="Tat-Ca-San-Pham.html" data-page-id="874704595">Xem tất cả</a>
-        <div class="u-expanded-width u-list u-repeater u-list-1">
-            <div class="u-container-style u-list-item u-repeater-item">
-                <div class="u-container-layout u-similar-container u-valign-top u-container-layout-1">
-                    <img alt="" class="u-image u-image-default u-image-1" data-image-width="1500" data-image-height="1108" src="images/AcerNitro7.jpg">
-                    <div class="u-border-1 u-border-grey-dark-1 u-expanded-width u-line u-line-horizontal u-line-1"></div>
-                    <p class="u-text u-text-2">Laptop Acer Nitro 7 AN715-54-750K Geforce GTX1660Ti 6GB Intel Core i7 9750H 8GB 256GB 15.6 FHD IPS 144Hz Win 10</p>
-                    <a href="Trang-Thong-Tin-Chi-Tiet.html" data-page-id="72415684" class="u-border-1 u-border-black u-border-hover-palette-2-base u-btn u-btn-rectangle u-button-style u-none u-text-body-color u-text-hover-palette-2-base u-btn-2">Xem thêm</a>
+        <div class="u-list u-repeater u-list-1">
+            <?php
+            $DAO->getAllproduct();
+            $Picture = "";
+            foreach ($_SESSION['listAllProduct'] -> message as $listAll){
+                if ($listAll->Laptop_Picture == "null"){
+                    $Picture = "nopicture.png";
+                }else{
+                    $Picture = $listAll->Laptop_Picture;
+                }
+                echo '
+            <div class="u-container-style u-list-item u-repeater-item u-video-cover u-white">
+                <div class="u-container-layout u-similar-container u-container-layout-1">
+                    <h3 class="u-align-center u-text u-text-palette-2-base u-text-1"><b style="">';echo $listAll->Laptop_Money,' đ&nbsp;</b>[Giá đã có VAT]
+                    </h3>
+                    <div class="u-border-4 u-border-palette-3-base u-expanded-width u-line u-line-horizontal u-line-1"></div>
+                    <img alt="" class="u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-image u-image-default u-image-1" data-image-width="1500" data-image-height="1108" src="images/';echo $Picture,'">
+                    <p class="u-text u-text-2">';echo $listAll->Laptop_Name,'</p>
+                    <a href="Trang-Thong-Tin-Chi-Tiet.html" data-page-id="72415684" class="u-btn u-button-style u-palette-3-base u-btn-1">Xem thêm chi tiết</a>
                 </div>
-            </div>
+            </div>';
+            }
+            ?>
         </div>
     </div>
 </section>
-<section class="u-clearfix u-section-4" id="sec-77da">
-    <div class="u-clearfix u-sheet u-sheet-1">
-        <h4 class="u-align-left u-text u-text-1">Top bàn phím</h4>
-        <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" href="https://nicepage.com">Xem tất cả</a>
-        <div class="u-expanded-width u-list u-repeater u-list-1">
-            <div class="u-container-style u-list-item u-repeater-item">
-                <div class="u-container-layout u-similar-container u-valign-top u-container-layout-1">
-                    <img alt="" class="u-image u-image-default u-image-1" data-image-width="1500" data-image-height="1108" src="images/AcerNitro7.jpg">
-                    <div class="u-border-1 u-border-grey-dark-1 u-expanded-width u-line u-line-horizontal u-line-1"></div>
-                    <p class="u-text u-text-2">Laptop Acer Nitro 7 AN715-54-750K Geforce GTX1660Ti 6GB Intel Core i7 9750H 8GB 256GB 15.6 FHD IPS 144Hz Win 10</p>
-                    <a href="Trang-Thong-Tin-Chi-Tiet.html" data-page-id="72415684" class="u-border-1 u-border-black u-border-hover-palette-2-base u-btn u-btn-rectangle u-button-style u-none u-text-body-color u-text-hover-palette-2-base u-btn-2">Xem thêm</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="u-clearfix u-section-5" id="sec-756b">
-    <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-sheet-1">
-        <h4 class="u-align-left u-text u-text-1">Top chuột gaming</h4>
-        <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" href="https://nicepage.com">Xem tất cả</a>
-        <div class="u-expanded-width u-list u-repeater u-list-1">
-            <div class="u-container-style u-list-item u-repeater-item">
-                <div class="u-container-layout u-similar-container u-valign-top u-container-layout-1">
-                    <img alt="" class="u-image u-image-default u-image-1" data-image-width="1500" data-image-height="1108" src="images/AcerNitro7.jpg">
-                    <div class="u-border-1 u-border-grey-dark-1 u-expanded-width u-line u-line-horizontal u-line-1"></div>
-                    <p class="u-text u-text-2">Laptop Acer Nitro 7 AN715-54-750K Geforce GTX1660Ti 6GB Intel Core i7 9750H 8GB 256GB 15.6 FHD IPS 144Hz Win 10</p>
-                    <a href="Trang-Thong-Tin-Chi-Tiet.html" data-page-id="72415684" class="u-border-1 u-border-black u-border-hover-palette-2-base u-btn u-btn-rectangle u-button-style u-none u-text-body-color u-text-hover-palette-2-base u-btn-2">Xem thêm</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="u-clearfix u-section-6" id="sec-3f8e">
-    <div class="u-clearfix u-sheet u-sheet-1">
-        <h4 class="u-align-left u-text u-text-1">Top tai nghe gaming</h4>
-        <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" href="https://nicepage.com">Xem tất cả</a>
-        <div class="u-expanded-width u-list u-repeater u-list-1">
-            <div class="u-container-style u-list-item u-repeater-item">
-                <div class="u-container-layout u-similar-container u-valign-top u-container-layout-1">
-                    <img alt="" class="u-image u-image-default u-image-1" data-image-width="1500" data-image-height="1108" src="images/AcerNitro7.jpg">
-                    <div class="u-border-1 u-border-grey-dark-1 u-expanded-width u-line u-line-horizontal u-line-1"></div>
-                    <p class="u-text u-text-2">Laptop Acer Nitro 7 AN715-54-750K Geforce GTX1660Ti 6GB Intel Core i7 9750H 8GB 256GB 15.6 FHD IPS 144Hz Win 10</p>
-                    <a href="Trang-Thong-Tin-Chi-Tiet.html" data-page-id="72415684" class="u-border-1 u-border-black u-border-hover-palette-2-base u-btn u-btn-rectangle u-button-style u-none u-text-body-color u-text-hover-palette-2-base u-btn-2">Xem thêm</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="u-clearfix u-section-7" id="sec-713a">
-    <div class="u-clearfix u-sheet u-sheet-1">
-        <h4 class="u-align-left u-text u-text-1">Top ghế gaming</h4>
-        <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" href="https://nicepage.com">Xem tất cả</a>
-        <div class="u-expanded-width u-list u-repeater u-list-1">
-            <div class="u-container-style u-list-item u-repeater-item">
-                <div class="u-container-layout u-similar-container u-valign-top u-container-layout-1">
-                    <img alt="" class="u-image u-image-default u-image-1" data-image-width="1500" data-image-height="1108" src="images/AcerNitro7.jpg">
-                    <div class="u-border-1 u-border-grey-dark-1 u-expanded-width u-line u-line-horizontal u-line-1"></div>
-                    <p class="u-text u-text-2">Laptop Acer Nitro 7 AN715-54-750K Geforce GTX1660Ti 6GB Intel Core i7 9750H 8GB 256GB 15.6 FHD IPS 144Hz Win 10</p>
-                    <a href="Trang-Thong-Tin-Chi-Tiet.html" data-page-id="72415684" class="u-border-1 u-border-black u-border-hover-palette-2-base u-btn u-btn-rectangle u-button-style u-none u-text-body-color u-text-hover-palette-2-base u-btn-2">Xem thêm</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<style class="u-overlap-style" style="">.u-overlap:not(.u-sticky-scroll) .u-header {
-        background-color: #000000 !important
-    }</style>
 
 
 <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-32e3"><div class="u-clearfix u-sheet u-sheet-1">
@@ -245,13 +175,13 @@ $DAO = new DAO();
     </div></footer>
 <section class="u-backlink u-clearfix u-grey-80">
     <a class="u-link" href="https://nicepage.com/website-templates" target="_blank">
-        <span>Website Templates</span>
+        <span>Free Website Templates</span>
     </a>
     <p class="u-text">
         <span>created with</span>
     </p>
-    <a class="u-link" href="https://nicepage.com/" target="_blank">
-        <span>Website Builder Software</span>
+    <a class="u-link" href="https://nicepage.com/static-site-generator" target="_blank">
+        <span>Static Website Generator</span>
     </a>.
 </section>
 </body>

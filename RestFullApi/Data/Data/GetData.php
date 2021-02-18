@@ -21,23 +21,22 @@ class getData{
         $this->dbReference = new DataConfig();
         $this->dbConnect = $this->dbReference->connectDB();
         if ($this->dbConnect == null){
-            $this->dbReference->sendResponse(503, '{"error_message":'.$this->dbReference->getStatusCodeMeeage(503).'}');
+            $this->dbReference->sendResponse(503, $this->dbReference->getStatusCodeMeeage(503));
         }
         else{
             $sql = "select * from product_inf";
-            if (isset($_POST['number'])){
-                $number = $_POST['number'];
-                $sql = "select * from infdata limit $number";
-            }
+            // if (isset($_POST['mainpage'])){
+            //         $sql = "select * from infdata limit 3";
+            // }
             $this->result = $this->dbConnect->query($sql);
             if ($this->result->num_rows > 0) {
                 $resultSet = array();
                 while ($row = $this->result->fetch_assoc()) {
                     $resultSet[] = $row;
                 }
-                $this->dbReference->sendResponse(200,'{"items":'.json_encode($resultSet).'}');
+                $this->dbReference->sendResponse(200, $resultSet);
             }else{
-                $this->dbReference->sendResponse(200, '{"items":null}');
+                $this->dbReference->sendResponse(204, '{"items":null}');
             }
         }
     }
@@ -88,41 +87,29 @@ class getData{
 //        }
 //    }
 
-
-
     function insertItemsJson(){
+
         $this->dbReference = new DataConfig();
         $this->dbConnect = $this->dbReference->connectDB();
 
-        if ($this->dbConnect == null){
-            echo "nope";
-        }
-
         $json  = file_get_contents('php://input', true);
         $data = json_decode($json);
-        if($json != null && $data->name != ""){
-            $sql = "insert into product_inf (Laptop_Id, Laptop_Name, Laptop_Manufacturer, Laptop_Money, Laptop_Picture)
+        if($json != null && $data->name != null){
+            $sql1 = "insert into product_inf (Laptop_Id, Laptop_Name, Laptop_Manufacturer, Laptop_Money, Laptop_Picture)
                     values ('$data->name', '$data->name1', '$data->name2', '$data->name3', '$data->name4')";
-            if($this->dbConnect->query($sql) === true){
-                $this->dbReference->sendResponse(201, '{"error_message":'.$this->dbReference->getStatusCodeMeeage(201).'}');
-            }
-            else{
-                $this->dbReference->sendResponse(400, '{"error_message":'.$this->dbReference->getStatusCodeMeeage(400).'}');
-            }
-            //======
-            $sql = "insert into product_detail (Laptop_Id, Laptop_OS, Laptop_CPU, Laptop_Ram, Laptop_VGA, Laptop_Hdd, Laptop_Ssd
+            $sql2 = "insert into product_detail (Laptop_Id, Laptop_OS, Laptop_CPU, Laptop_Ram, Laptop_VGA, Laptop_Hdd, Laptop_Ssd
                         , Laptop_Display, Laptop_Lan, Laptop_WirelessLan, Laptop_ConnectionGate, Laptop_KeyBoard, Laptop_Pin, Laptop_Weight, Laptop_OpticalDrive)
                         values ('$data->name', '$data->name5', '$data->name6', '$data->name7', '$data->name8', '$data->name9', '$data->name10', '$data->name11', '$data->name12', '$data->name13', '$data->name14'
                         , '$data->name15', '$data->name16', '$data->name17', '$data->name18')";
-            if($this->dbConnect->query($sql) === true){
-                $this->dbReference->sendResponse(201, '{"error_message":'.$this->dbReference->getStatusCodeMeeage(201).'}');
+            if($this->dbConnect->query($sql1) && $this->dbConnect->query($sql2) === true){
+                $this->dbReference->sendResponse(201, '{"message":'.$this->dbReference->getStatusCodeMeeage(201).'}');
             }
             else{
-                $this->dbReference->sendResponse(400, '{"error_message":'.$this->dbReference->getStatusCodeMeeage(400).'}');
+                $this->dbReference->sendResponse(400, $this->dbReference->getStatusCodeMeeage(400));
             }
         }
         else{
-            $this->dbReference->sendResponse(400, '{"error_message":'.$this->dbReference->getStatusCodeMeeage(300).'}');
+            $this->dbReference->sendResponse(400, $this->dbReference->getStatusCodeMeeage(300));
         }
     }
 }
